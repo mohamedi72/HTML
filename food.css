@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
+/*  Utility Classes*/
+
+.primary-text {
+    color: #e4b95b;
+  }
+  
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .btn-primary {
+    border: 1px solid #fff;
+  }
+
+  .btn-secondary,
+.btn-third:hover {
+  background: #383848;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third {
+  background: #e4b95b;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+  /* 
+    
+header          :height/ background/ position
+header *        :z-index: 2;
+
+#navbar         :display / justify-content / align-items
+header .content :display / justify-content / align-items  
+                /height / flex-direction
+
+#navbar img     :width   / margin-left
+nav ul          :display / margin-right  /list-style
+
+nav a           :text-decoration / font-weight / padding /color
+.content a      :text-decoration /color
+
+.content h1     :font-size / color
+.content p      :color     / margin
+nav a:hover     :border-bottom
+header::before  :content / position/ width / height /background
+
+
+
+
+  */
+
+header
+{
+    height: 100vh;
+    background: url(./img/home_bg.jpeg) center/cover no-repeat;
+    position: relative;
+}
+
+#navbar
+{
+    display: flex;
+    justify-content: space-between; /* مسافة بنهم */
+    align-items: center; /* للعمودي */
+    width: 100%;
+    height: 100px;
+}
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+
+nav ul
+{
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+}
+nav a
+{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 20px;
+    color: aliceblue;
+}
+
+nav a:hover
+{
+    border-bottom:2px solid  #e4b95b;
+}
+
+header .content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+
+header::before
+{
+    content: "dfdf";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+  
+}
+  header * 
+  {
+      z-index: 2;
+  }
+
+.content h1
+{
+    font-size: 40px;
+    color:#fff ;
+}
+
+.content p 
+{
+    color: #fff;
+    margin: 20px 0 40px;
+}
+.content a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*About Section Start  */
+#about
+{
+  height: 80vh;
+  background: #f4f4f4;
+}
+.container
+{
+  max-width: 1100px;
+  margin: auto;
+  
+}
+.title
+{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title h2{
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 10px;
+
+}
+.about-content
+{
+  display: flex;
+  justify-content: space-between;
+}
+.about-content img
+{
+  max-width:450px ;
+}
+.about-content p
+{
+  line-height: 1.6;
+  font-weight: 500;
+  margin-right: 7rem;
+}
+.about-content a
+{
+  margin-top: 2rem;
+}
+
+
+
+/* 
+Offers Section Start
+*/
+#offers
+{
+  height: 80vh;
+  background: url("./img/offer-background.jpg") center center/cover fixed;
+  
+}
+#offers .container h2
+{
+ 
+  color: #f4f4f4;
+}
+
+
+
+#menu{
+  background-color: #f4f2ed;
+  
+}
+.offers-items
+{
+  background-color: rgb(69, 134, 192);
+  display: flex;
+  text-align: center;
+
+}
+.offers-items img
+{
+  width: 200px;
+}
+
+.menu-items
+{
+  display: flex;
+  text-align: center;
+
+}
+.menu-item
+{
+  display: flex;
+  text-align: left;
+  margin: 20px;
+  position: relative;
+}
+.menu-item h3
+{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #c2bdbd;
+  padding: 5px;
+}
+.menu-item p
+{
+  margin-right: 50px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.menu-items img
+{
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.menu-item .primary-text
+{
+position: absolute;
+
+right: 0;
+}
+#menu .btn
+{
+  margin: auto;
+  background-color: #e4b95b;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#menu .btn:hover
+{
+  background-color: #383848;
+}
